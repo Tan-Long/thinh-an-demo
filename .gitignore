@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.vercel/
+.playwright-mcp/
+.scratch/
+.interface-design/
+tmp/
+output/
+prototype/qa/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+__pycache__/
+*.pyc
+# Local planning documents and historical proposal tooling
+GLOSSARY.md
+scripts/build-client-proposal.py
+scripts/build-care-plan.py
+311342073_131419769648487_1936651414492158706_n.jpg
+assets/reference/*-sheet.jpg

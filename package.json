@@ -1,0 +1,9 @@
+{
+  "name": "thinh-an-prototype",
+  "private": true,
+  "scripts": {
+    "dev": "python3 scripts/serve-demo.py",
+    "test": "node --test prototype/state.test.mjs prototype/chat.test.mjs prototype/storage.test.mjs prototype/analytics.test.mjs prototype/demo-history.test.mjs",
+    "build": "node scripts/build-demo.mjs"
+  }
+}

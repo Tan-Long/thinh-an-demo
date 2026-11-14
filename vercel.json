@@ -1,0 +1,64 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "node scripts/build-demo.mjs",
+  "installCommand": "npm ci --prefix prototype/astryx",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/affiliate/dashboard",
+      "has": [
+        {
+          "type": "query",
+          "key": "variant",
+          "value": "astryx"
+        }
+      ],
+      "destination": "/astryx/index.html"
+    },
+    {
+      "source": "/home/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/catalog/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/product/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/story/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/journal/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/gifts/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/checkout/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/order/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/tracking/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/affiliate/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "/index.html"
+    }
+  ]
+}

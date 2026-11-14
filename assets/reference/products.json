@@ -1,0 +1,112 @@
+[
+  {
+    "id": "tom-non",
+    "name": "Chè Thịnh An Tôm Nõn",
+    "weight_g": 200,
+    "pack": "20 gói × 10 g",
+    "image_id": "facebook-1073743538749434",
+    "article_ids": [
+      "kinhtedouong",
+      "danviet"
+    ],
+    "evidence": "Tên và khối lượng đọc trực tiếp trên ảnh Facebook.",
+    "price_vnd": null,
+    "stock": null,
+    "availability": "Chưa xác minh hiện tại",
+    "demo_note": "Không tự gán giá, tồn kho hoặc chứng nhận. Nếu cần giá để thử checkout, dùng trường riêng và nhãn giá mô phỏng."
+  },
+  {
+    "id": "dinh-tra",
+    "name": "Chè Thịnh An Thượng Hạng (Đinh Trà)",
+    "weight_g": 200,
+    "pack": null,
+    "image_id": "facebook-1073743595416095",
+    "article_ids": [
+      "nhandan",
+      "danviet"
+    ],
+    "evidence": "Tên và khối lượng đọc trực tiếp trên ảnh Facebook.",
+    "price_vnd": null,
+    "stock": null,
+    "availability": "Chưa xác minh hiện tại",
+    "demo_note": "Không tự gán giá, tồn kho hoặc chứng nhận. Nếu cần giá để thử checkout, dùng trường riêng và nhãn giá mô phỏng."
+  },
+  {
+    "id": "dac-biet",
+    "name": "Chè Thịnh An Đặc Biệt",
+    "weight_g": null,
+    "pack": null,
+    "image_id": "nhandan-05",
+    "article_ids": [
+      "kinhtedouong"
+    ],
+    "evidence": "Tên nhìn được trên bao bì trong bài Nhân Dân.",
+    "price_vnd": null,
+    "stock": null,
+    "availability": "Chưa xác minh hiện tại",
+    "demo_note": "Không tự gán giá, tồn kho hoặc chứng nhận. Nếu cần giá để thử checkout, dùng trường riêng và nhãn giá mô phỏng."
+  },
+  {
+    "id": "trung-du",
+    "name": "Chè Thịnh An Trung Du Thuần Chủng",
+    "weight_g": null,
+    "pack": null,
+    "image_id": null,
+    "article_ids": [
+      "kinhtedouong",
+      "heritage"
+    ],
+    "evidence": "Có nguồn nêu tên; chưa có ảnh riêng đối chiếu chắc chắn.",
+    "price_vnd": null,
+    "stock": null,
+    "availability": "Chưa xác minh hiện tại",
+    "demo_note": "Không tự gán giá, tồn kho hoặc chứng nhận. Nếu cần giá để thử checkout, dùng trường riêng và nhãn giá mô phỏng."
+  },
+  {
+    "id": "tui-loc",
+    "name": "Trà xanh túi lọc",
+    "weight_g": 50,
+    "pack": null,
+    "image_id": null,
+    "article_ids": [
+      "product-innovation",
+      "nhandan"
+    ],
+    "evidence": "50 g/hộp theo bài báo; cần HTX xác nhận quy cách hiện hành.",
+    "price_vnd": null,
+    "stock": null,
+    "availability": "Chưa xác minh hiện tại",
+    "demo_note": "Không tự gán giá, tồn kho hoặc chứng nhận. Nếu cần giá để thử checkout, dùng trường riêng và nhãn giá mô phỏng."
+  },
+  {
+    "id": "matcha",
+    "name": "Bột trà xanh matcha",
+    "weight_g": null,
+    "pack": null,
+    "image_id": null,
+    "article_ids": [
+      "product-innovation",
+      "matcha"
+    ],
+    "evidence": "Có nguồn nêu dòng sản phẩm; chưa xác minh quy cách bán hiện hành.",
+    "price_vnd": null,
+    "stock": null,
+    "availability": "Chưa xác minh hiện tại",
+    "demo_note": "Không tự gán giá, tồn kho hoặc chứng nhận. Nếu cần giá để thử checkout, dùng trường riêng và nhãn giá mô phỏng."
+  },
+  {
+    "id": "che-den",
+    "name": "Chè đen",
+    "weight_g": null,
+    "pack": null,
+    "image_id": null,
+    "article_ids": [
+      "nhandan"
+    ],
+    "evidence": "Có nguồn nêu dòng sản phẩm; chưa có packshot riêng.",
+    "price_vnd": null,
+    "stock": null,
+    "availability": "Chưa xác minh hiện tại",
+    "demo_note": "Không tự gán giá, tồn kho hoặc chứng nhận. Nếu cần giá để thử checkout, dùng trường riêng và nhãn giá mô phỏng."
+  }
+]

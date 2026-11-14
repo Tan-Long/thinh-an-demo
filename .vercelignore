@@ -1,0 +1,9 @@
+.scratch/
+.playwright-mcp/
+prototype/qa/
+prototype/README.md
+prototype/state.test.mjs
+dist/
+node_modules/
+GLOSSARY.md
+311342073_131419769648487_1936651414492158706_n.jpg
