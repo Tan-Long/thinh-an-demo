@@ -7,6 +7,11 @@ class Handler(SimpleHTTPRequestHandler):
   super().__init__(*args,directory=str(ROOT),**kwargs)
  def do_GET(self):
   path=urlsplit(self.path).path
+  if path.split('/')[1] in ['compare','concept-2']:
+   self.send_response(308)
+   self.send_header('Location','/')
+   self.end_headers()
+   return
   if path=='/affiliate/dashboard' and 'variant=astryx' in self.path:
    self.path='/astryx/index.html'
   elif path.split('/')[1] in ['home','catalog','product','story','journal','gifts','checkout','order','tracking','affiliate','admin']:

@@ -1,5 +1,5 @@
 import {execFileSync} from 'node:child_process';
-import {mkdirSync,rmSync,copyFileSync,cpSync,writeFileSync,existsSync,readFileSync,readdirSync} from 'node:fs';
+import {mkdirSync,rmSync,copyFileSync,cpSync,writeFileSync,existsSync,readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 
 // Deploy only the public demo and its sourced assets, never planning files or browser traces.
@@ -18,16 +18,7 @@ console.log('Static demo built; referenced assets and deployment boundaries chec
 
 execFileSync(process.execPath,['prototype/astryx/build.mjs'],{stdio:'inherit'});
 
-// Keep the alternate design and its browser data separate from the existing app.
-cpSync('concept-2','dist/concept-2',{recursive:true,filter:path=>!path.endsWith('.md')});
-cpSync('comparison','dist/compare',{recursive:true});
-function addDesignSwitcher(file,variant){
- const nav=`<nav class="design-switcher" aria-label="Chọn hướng thiết kế"><a href="/" ${variant===1?'aria-current="page"':''}>01 · Miền trà</a><a href="/concept-2/" ${variant===2?'aria-current="page"':''}>02 · Huyền Trà Xưa</a><a class="design-all" href="/compare/">So sánh</a></nav>`;
- const html=readFileSync(file,'utf8').replace('</head>','<link rel="stylesheet" href="/compare/switcher.css"></head>').replace(/<body([^>]*)>/,`<body$1>${nav}`);
- writeFileSync(file,html);
- assert(html.includes('aria-label="Chọn hướng thiết kế"'));
-}
-for(const file of ['dist/index.html','dist/prototype/index.html','dist/astryx/index.html'])addDesignSwitcher(file,1);
-for(const file of readdirSync('dist/concept-2').filter(file=>file.endsWith('.html')))addDesignSwitcher('dist/concept-2/'+file,2);
-assert(existsSync('dist/concept-2/assets/images/hero-thu-hai.jpg'));
-assert(existsSync('dist/compare/index.html'));
+// Ship one storefront; the retired designs remain only in source history.
+assert(!existsSync('dist/compare'));
+assert(!existsSync('dist/concept-2'));
+assert(!readFileSync('dist/index.html','utf8').includes('design-switcher'));

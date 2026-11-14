@@ -1,5 +1,5 @@
 /* Editorial storefront; purchasing controls and operational workspaces keep their UI typography. */
-body:is([data-page=home],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=story],[data-page=journal]){--paper:#f6f3eb;--soft:#ece9dd;--ink:#203d30;--ink-strong:#142d23;--muted:#626b5e;--line:#d9d9ca;--editorial:'Merienda','Segoe Print',cursive;--sans:'Montserrat',Arial,sans-serif;background:var(--paper)}
+body:is([data-page=home],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=story],[data-page=journal]){--paper:#f6f3eb;--soft:#ece9dd;--ink:#203d30;--ink-strong:#142d23;--muted:#626b5e;--line:#d9d9ca;--editorial:'Playfair Display',Georgia,serif;--sans:'Montserrat',Arial,sans-serif;background:var(--paper)}
 body:is([data-page=home],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=story],[data-page=journal]) #main :is(h1,h2,h3){font-family:var(--editorial);font-weight:400;letter-spacing:-.02em}
 body:is([data-page=home],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=story],[data-page=journal]) :is(.site-header,footer){background:var(--paper)}
 body:not(.admin-view) .site-header nav a{border-radius:0}body:not(.admin-view) .site-header nav a.active{background:transparent;border-bottom:1px solid var(--ink)}
@@ -12,7 +12,7 @@ body[data-page=home] #main .mosaic-copy h1{font-size:clamp(58px,7vw,108px);line-
 .products-section{padding-top:48px;padding-bottom:88px}.section-heading{align-items:end}.section-heading h2{font-size:clamp(34px,3.7vw,54px)}.product-card{background:transparent;border:0;padding:0}.product-photo,.products-section .product-photo,.related-products .product-photo{background:#e9e7dc;border:1px solid var(--line)}.product-photo>img,.product-card:nth-child(3) .product-photo>img{background:#e9e7dc;padding:24px}.product-meta,.product-card h3,.price-row{margin-left:0;margin-right:0}.product-card h3{font-size:26px!important;line-height:1.3!important}.product-meta{margin-top:18px}.price-row{padding-top:12px;border-top:1px solid var(--line);padding-bottom:0}.product-badge{border-radius:0;background:var(--paper);font-size:9px;letter-spacing:.08em}.card-add{border:0!important;border-radius:0!important;background:transparent!important;padding:8px 0!important;font-size:11px}
 .gift-editorial{margin:0;grid-template-columns:1fr 1fr;background:#203d30 url('/assets/reference/tea-contours.svg') left bottom/80% auto no-repeat;border-radius:0;min-height:620px}.gift-editorial>div{padding:72px 14%}.gift-editorial h2{font-size:clamp(40px,4.7vw,66px)}.gift-editorial-image{min-height:620px}.gift-editorial .eyebrow{color:#c7c8a4}.gift-editorial p{margin-top:24px}.gift-editorial-foot{margin-top:40px;border-color:#ffffff38}.people-story{padding:96px 7%;background:var(--paper);gap:10%}.people-copy h2{font-size:clamp(40px,4.4vw,64px)}.people-photo{min-height:560px}.people-copy .button{border:1px solid var(--line)}.people-field{border-color:var(--line)}
 .tea-journal{background:#eeebdf;padding-top:80px;padding-bottom:80px}.journal-feature{gap:7%}.journal-reading>a{padding:24px 0}.journal-reading h3{font-size:24px}.tea-help{background:var(--paper);padding:72px 7%}.tea-help a{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:24px 0}.tea-help h2{font-size:40px}
-body:not(.admin-view) footer{border-top:1px solid var(--line)}body:not(.admin-view) footer h2{font:400 36px/1.3 'Merienda','Segoe Print',cursive;letter-spacing:-.03em}
+body:not(.admin-view) footer{border-top:1px solid var(--line)}body:not(.admin-view) footer h2{font:400 36px/1.3 'Playfair Display',Georgia,serif;letter-spacing:-.03em}
 body[data-page=product] .detail-copy h1{font-size:clamp(40px,4.3vw,62px)}.detail-copy .detail-price{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;font-size:28px;margin:24px 0}.detail-price small{font:12px var(--sans);color:var(--muted)}.tea-fit{margin-top:24px;border-left:2px solid #93956f;padding:4px 0 4px 16px}.tea-fit>span{font-size:9px;letter-spacing:.15em}.tea-fit p{font-size:13px;line-height:1.7;margin-top:6px}.detail-photo{border:1px solid var(--line);background:#ebe9dd}.product-thumbnails button{border-radius:2px}.purchase-info{padding:20px 0}.gift-enquiry{border-radius:2px;background:var(--soft)}.product-information{background:#ebe8db;padding-top:64px;padding-bottom:64px}.product-specs h3{font-size:26px}.product-specs details{border-radius:0}.tea-ritual{display:grid;grid-template-columns:1fr 1fr;gap:8%;padding:88px 7%;align-items:center}.tea-ritual-photo{position:relative;align-self:stretch;min-height:520px}.tea-ritual-photo>img{position:absolute;width:100%;height:100%;object-fit:cover}.tea-ritual-photo>span{position:absolute;inset:auto 0 0;padding:60px 24px 24px;background:linear-gradient(transparent,#142d23b3);color:white;font-size:9px;letter-spacing:.14em}.tea-ritual h2{font-size:clamp(36px,3.8vw,54px);margin:20px 0}.tea-ritual-copy>p{font-size:14px;line-height:1.9}.tea-ritual ol{list-style:none;padding:0;margin:24px 0}.tea-ritual li{display:flex;gap:20px;padding:16px 0;border-top:1px solid var(--line)}.tea-ritual li>span{font:italic 23px var(--editorial);color:#8b9277}.tea-ritual li b{font-size:13px;font-weight:500}.tea-ritual li p{font-size:12px;line-height:1.7;margin-top:5px}.related-products{border-top:1px solid var(--line)}
 .business-heading{border-radius:0;background:#203d30 url('/assets/reference/tea-contours.svg') left bottom/80% auto no-repeat;padding:72px 7%;gap:9%;color:#f6f3eb}.business-heading h1{font-size:clamp(44px,5vw,72px)}.business-heading h1 em{color:#dedbbd}.business-heading .eyebrow,.business-heading p,.business-heading .text-link{color:#d8decf}.business-heading .text-link{border-color:#8d9c87}.business-heading .button{background:#eeebda!important;border-color:#eeebda!important;color:#203d30!important}.business-packages img{height:390px;border:1px solid #ffffff20}.business-packages img:nth-child(2){margin-top:56px}.business-packages span{color:#d8decf}.gift-selection{padding-top:80px;padding-bottom:80px}.gift-offer{background:transparent;border:1px solid var(--line);overflow:hidden}.gift-offer-photo{background:#ebe9dd}.gift-offer-copy{padding:28px}.gift-offer-heading h3{font-size:36px}.gift-offer-copy .button{margin-top:8px}.gift-budget-filters button{border-radius:2px}.gift-planning{background:#ebe8db;padding-top:64px;padding-bottom:64px}.gift-planning-items>div{border-radius:0;background:transparent}.gift-request{padding-top:80px;padding-bottom:80px}.gift-request .form-panel{border-radius:3px;border:1px solid var(--line);background:#fffdf7}.gift-request h2{font-size:clamp(36px,4vw,56px)}
 @media(max-width:1000px){.origin-introduction{grid-template-columns:1fr 1fr;gap:32px}.origin-seal{display:none}.gift-editorial>div{padding:48px 10%}.gift-editorial,.gift-editorial-image{min-height:500px}.people-photo{min-height:460px}.business-packages img{height:300px}.tea-ritual{gap:5%}.tea-ritual-photo{min-height:480px}}
@@ -20,7 +20,7 @@ body[data-page=product] .detail-copy h1{font-size:clamp(40px,4.3vw,62px)}.detail
 body[data-page=gifts] #main .business-heading h1{color:#f6f3eb}
 
 /* Storefront font pair, including the cart, advisor and customer order lookup. */
-body:is([data-page=tracking],[data-page=order],[data-page=checkout]){--sans:'Montserrat',Arial,sans-serif;--editorial:'Merienda','Segoe Print',cursive}
+body:is([data-page=tracking],[data-page=order],[data-page=checkout]){--sans:'Montserrat',Arial,sans-serif;--editorial:'Playfair Display',Georgia,serif}
 body:is([data-page=home],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=story],[data-page=journal],[data-page=tracking],[data-page=order],[data-page=checkout]){font-family:var(--sans)}
 body:is([data-page=home],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=story],[data-page=journal]) #main .product-card h3{font-weight:500}
 body:not(.admin-view) :is(.price-row strong,.detail-price){font-weight:600}
@@ -37,32 +37,14 @@ body:is([data-page=tracking],[data-page=order],[data-page=checkout]) #main h1{fo
 @media(max-width:700px){.mosaic-slides .mosaic-slide-1{object-position:76% center}.mosaic-slides .mosaic-slide-2{object-position:58% center}.mosaic-slides .mosaic-slide-3{object-position:54% center}.mosaic-copy{padding-bottom:104px}}
 @media(prefers-reduced-motion:reduce){.mosaic-slides .mosaic-slide{animation:none;transform:none}.mosaic-slide-2,.mosaic-slide-3{display:none}}
 /* Home hero: three sourced photographs, with a quiet graphic layer over them. */
-.mosaic-atmosphere{position:absolute;inset:0;pointer-events:none}
 @keyframes hero-field{0%,29%{opacity:1;transform:scale(1.055)}36%,95%{opacity:0;transform:scale(1.1)}100%{opacity:1;transform:scale(1.055)}}
 @keyframes hero-buds{0%,29%{opacity:0;transform:scale(1.055)}36%,62%{opacity:1;transform:scale(1.1)}69%,100%{opacity:0;transform:scale(1.055)}}
 @keyframes hero-cup{0%,62%{opacity:0;transform:scale(1.055)}69%,95%{opacity:1;transform:scale(1.1)}100%{opacity:0;transform:scale(1.055)}}
-.mosaic-atmosphere{z-index:1;overflow:hidden;opacity:.7;background:radial-gradient(ellipse at 82% 20%,#e0e7b135,transparent 34%),radial-gradient(ellipse at 95% 82%,#b2c8a42b,transparent 38%)}
-.mosaic-atmosphere::before{content:"";position:absolute;inset:-20% -12% -20% 42%;background:url('/assets/reference/tea-contours.svg') center/cover no-repeat;opacity:.5;filter:blur(2px);animation:hero-contours 20s ease-in-out infinite alternate}
-.mosaic-atmosphere::after{content:"";position:absolute;width:34vw;height:34vw;min-width:260px;min-height:260px;right:3%;top:6%;border-radius:50%;background:#d8e8b330;filter:blur(75px);animation:hero-glow 15s ease-in-out infinite alternate}
 @keyframes hero-contours{to{transform:translate3d(-4%,4%,0) rotate(4deg)}}
-@keyframes hero-glow{to{transform:translate3d(-15%,22%,0) scale(1.2);opacity:.45}}
-.floating-leaf{position:absolute;z-index:1;bottom:-130px;left:var(--left);width:var(--size,58px);height:calc(var(--size,58px) + 36px);border:1px solid #f7f7dc99;border-radius:8% 88% 10% 88%;background:linear-gradient(135deg,#f2f6d3b8,#c1d6a477);box-shadow:0 0 28px #d9e9b544;filter:blur(1.2px);opacity:0;animation:tea-leaf-drift var(--duration,23s) linear infinite;animation-delay:var(--delay,0s)}
-.floating-leaf::after{content:"";position:absolute;left:47%;top:8%;height:83%;border-left:1px solid #f7f8e6aa;transform:rotate(-26deg)}
-.floating-leaf:nth-child(1){--left:7%;--size:68px;--duration:24s;--delay:-18s;--sway:95px}
-.floating-leaf:nth-child(2){--left:19%;--size:42px;--duration:19s;--delay:-4s;--sway:-70px}
-.floating-leaf:nth-child(3){--left:31%;--size:78px;--duration:28s;--delay:-14s;--sway:110px}
-.floating-leaf:nth-child(4){--left:45%;--size:49px;--duration:21s;--delay:-9s;--sway:-95px}
-.floating-leaf:nth-child(5){--left:58%;--size:63px;--duration:25s;--delay:-22s;--sway:65px}
-.floating-leaf:nth-child(6){--left:70%;--size:38px;--duration:18s;--delay:-12s;--sway:-75px}
-.floating-leaf:nth-child(7){--left:82%;--size:73px;--duration:27s;--delay:-6s;--sway:90px}
-.floating-leaf:nth-child(8){--left:95%;--size:53px;--duration:22s;--delay:-16s;--sway:-115px}
-@keyframes tea-leaf-drift{0%{opacity:0;transform:translate3d(0,0,0) rotate(-25deg)}12%{opacity:.48}82%{opacity:.4}100%{opacity:0;transform:translate3d(var(--sway,80px),-115vh,0) rotate(30deg)}}
 .mosaic-copy{z-index:2;background:linear-gradient(90deg,#0e241dcc 0%,#0e241d85 54%,#0e241d26 100%),linear-gradient(0deg,#0e241da8,transparent 72%)}
 body[data-page=home] #main .mosaic-copy h1{max-width:1100px;margin:16px 0 14px}
 .mosaic-copy .eyebrow{max-width:620px;line-height:1.6;letter-spacing:.14em}
 .mosaic-copy p{max-width:620px;margin:0 0 22px;color:#f7f5e9;font-size:clamp(14px,1.2vw,17px);line-height:1.7;text-wrap:pretty}
-@media(max-width:700px){.mosaic-copy .eyebrow{font-size:10px;letter-spacing:.1em}body[data-page=home] #main .mosaic-copy h1{font-size:clamp(36px,9.2vw,58px);line-height:1.1}.mosaic-copy p{font-size:14px;line-height:1.6;margin-bottom:18px}.mosaic-atmosphere::before{inset:-10% -40% -10% 20%}}
-@media(prefers-reduced-motion:reduce){.mosaic-atmosphere::before,.mosaic-atmosphere::after,.floating-leaf{animation:none!important}.floating-leaf{opacity:0}}
 
 /* Keep the entire first screen centered. */
 .mosaic-copy{align-items:center;justify-content:center;text-align:center}
@@ -104,11 +86,11 @@ body[data-page=home] .tea-help{position:relative;isolation:isolate;overflow:hidd
 body[data-page=home] #main .home-ritual h2{color:#fff;margin:0 0 22px}
 @media(max-width:700px){body[data-page=home] #main .home-story h2{font-size:clamp(36px,9vw,48px)}body[data-page=home] #main .home-ritual h2{font-size:clamp(38px,9vw,54px)}}
 
-/* Merienda display headings across editorial sections. */
-body:is([data-page=home],[data-page=story],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=journal]) #main section h2{font-family:'Merienda','Segoe Print',cursive;font-weight:500;letter-spacing:-.025em;line-height:1.3;text-wrap:balance}
-body[data-page=home] #main .home-promise h2{font-family:'Merienda','Segoe Print',cursive;font-size:clamp(21px,1.8vw,28px);line-height:1.3;margin:14px 0 10px}
-body[data-page=home] #main .home-story h2{font-family:'Merienda','Segoe Print',cursive;font-size:clamp(36px,4.1vw,60px);line-height:1.27}
-body[data-page=home] #main .home-ritual h2{font-family:'Merienda','Segoe Print',cursive;font-size:clamp(38px,4.2vw,62px);line-height:1.24}
+/* Consistent editorial headings; handwritten face stays in the hero. */
+body:is([data-page=home],[data-page=story],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=journal]) #main section h2{font-family:'Playfair Display',Georgia,serif;font-weight:500;letter-spacing:-.025em;line-height:1.3;text-wrap:balance}
+body[data-page=home] #main .home-promise h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(21px,1.8vw,28px);line-height:1.3;margin:14px 0 10px}
+body[data-page=home] #main .home-story h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(36px,4.1vw,60px);line-height:1.27}
+body[data-page=home] #main .home-ritual h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(38px,4.2vw,62px);line-height:1.24}
 body[data-page=home] #main .gift-editorial h2{font-size:clamp(36px,3.7vw,56px)}
 body:is([data-page=home],[data-page=story],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=journal]) #main .section-heading{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:18px}
 body:is([data-page=home],[data-page=story],[data-page=catalog],[data-page=product],[data-page=gifts],[data-page=journal]) #main .section-heading>div{display:flex;flex-direction:column;align-items:center}
@@ -122,8 +104,8 @@ body:is([data-page=story],[data-page=journal]) #main .page-intro{text-align:cent
 
 
 /* Decorative accents requested for the highlighted story line and tea names. */
-body[data-page=home] #main .home-story-copy .story-highlight{font-family:'Prata','Merienda',serif;font-style:normal;font-weight:400;line-height:1.55}
-body:is([data-page=home],[data-page=catalog],[data-page=product]) #main .product-card h3,body[data-page=product] #main .detail-copy h1{font-family:'Prata','Merienda',serif;font-weight:400;letter-spacing:.01em}
+body[data-page=home] #main .home-story-copy .story-highlight{font-family:'Playfair Display',Georgia,serif;font-style:normal;font-weight:400;line-height:1.55}
+body:is([data-page=home],[data-page=catalog],[data-page=product]) #main .product-card h3,body[data-page=product] #main .detail-copy h1{font-family:'Playfair Display',Georgia,serif;font-weight:400;letter-spacing:.01em}
 
 /* Collection opening: centered copy over a slowly changing tea backdrop. */
 body[data-page=catalog] #main .collection-heading{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr);place-items:center;min-height:clamp(400px,43vw,550px);overflow:hidden;background:#173629;color:#fff;text-align:center}
@@ -141,3 +123,5 @@ body[data-page=catalog] #main .collection-heading p{max-width:670px;margin:0 aut
 @media(max-width:700px){body[data-page=catalog] #main .collection-heading{min-height:420px}body[data-page=catalog] #main .collection-heading>.collection-copy{padding:64px 24px}body[data-page=catalog] #main .collection-heading h1{font-size:clamp(34px,8vw,44px);max-width:350px;margin:16px auto 18px;white-space:normal}body[data-page=catalog] #main .collection-heading p{max-width:330px}.collection-slides .collection-slide{object-position:center 45%}}
 @keyframes collection-pan{to{transform:scale(1.08) translate3d(-1%,1%,0)}}
 @media(prefers-reduced-motion:reduce){body[data-page=catalog] #main .collection-heading::before,.collection-slides .collection-slide{animation:none!important;transform:none!important}.collection-slides .collection-slide{opacity:0}.collection-slides .collection-slide:first-child{opacity:1}}
+
+@media(max-width:700px){.mosaic-copy .eyebrow{font-size:10px;letter-spacing:.1em}body[data-page=home] #main .mosaic-copy h1{font-size:clamp(36px,9.2vw,58px);line-height:1.16}.mosaic-copy p{font-size:14px;line-height:1.6;margin-bottom:18px}}

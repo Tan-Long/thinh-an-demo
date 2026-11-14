@@ -60,5 +60,17 @@
       "source": "/admin/:path*",
       "destination": "/index.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/compare/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/concept-2/:path*",
+      "destination": "/",
+      "permanent": true
+    }
   ]
 }
