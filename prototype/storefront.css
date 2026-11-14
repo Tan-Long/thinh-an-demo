@@ -28,16 +28,12 @@ body:not(.admin-view) :is(.price-row strong,.detail-price){font-weight:600}
 body:is([data-page=tracking],[data-page=order],[data-page=checkout]) #main h1{font-family:var(--editorial)}
 @media(max-width:700px){.mosaic-copy{padding-bottom:72px}}
 
-/* Three photographs, one fixed headline; an opaque base prevents dark flashes. */
+/* Harvest first; the fields linger for 13 seconds with a gentler zoom. */
 .mosaic-slides{position:absolute;inset:0;overflow:hidden}
-.mosaic-slides .mosaic-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;animation-duration:27.6s;animation-timing-function:linear;animation-iteration-count:infinite}
-.mosaic-slide-1{animation-name:teaFieldsZoom}.mosaic-slide-2{opacity:0;animation-name:teaHarvestZoom}.mosaic-slide-3{opacity:0;animation-name:teaTableZoom}
-.tea-mosaic.hero-paused .mosaic-slide{animation-play-state:paused}
-.mosaic-motion-toggle{position:absolute;z-index:2;top:24px;right:24px;min-height:44px;padding:10px 16px;border:1px solid #ffffff90;border-radius:4px;background:#102c21b3;color:#fff;font:500 12px/1.4 var(--sans);cursor:pointer}
-.mosaic-motion-toggle:hover{background:#102c21e6}.mosaic-motion-toggle:focus-visible{outline:2px solid white;outline-offset:4px}
-@keyframes teaFieldsZoom{0%{transform:scale(1.08)}28.9855%,33.3333%{transform:scale(1)}33.34%,100%{transform:scale(1.08)}}
-@keyframes teaHarvestZoom{0%,28.9855%{opacity:0;transform:scale(1.08)}33.3333%{opacity:1;transform:scale(1.07)}62.3188%,66.6667%{opacity:1;transform:scale(1)}66.67%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1.08)}}
-@keyframes teaTableZoom{0%,62.3188%{opacity:0;transform:scale(1.08)}66.6667%{opacity:1;transform:scale(1.07)}95.6522%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
-@media(max-width:700px){.mosaic-slides .mosaic-slide-1{object-position:58% center}.mosaic-slides .mosaic-slide-2{object-position:76% center}.mosaic-slides .mosaic-slide-3{object-position:54% center}.mosaic-motion-toggle{top:16px;right:16px;font-size:11px}}
-@media(prefers-reduced-motion:reduce){.mosaic-slides .mosaic-slide{animation:none;transform:none}.mosaic-slide-2,.mosaic-slide-3,.mosaic-motion-toggle{display:none}}
-@media(max-width:700px){.mosaic-copy{padding-bottom:104px}}
+.mosaic-slides .mosaic-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;animation-duration:32.6s;animation-timing-function:linear;animation-iteration-count:infinite}
+.mosaic-slide-1{animation-name:teaHarvestZoom}.mosaic-slide-2{opacity:0;animation-name:teaFieldsZoom}.mosaic-slide-3{opacity:0;animation-name:teaTableZoom}
+@keyframes teaHarvestZoom{0%{transform:scale(1.08)}24.5399%,28.2209%{transform:scale(1)}28.23%,100%{transform:scale(1.08)}}
+@keyframes teaFieldsZoom{0%,24.5399%{opacity:0;transform:scale(1.05)}28.2209%{opacity:1;transform:scale(1.046)}68.0982%,71.7791%{opacity:1;transform:scale(1)}71.79%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1.05)}}
+@keyframes teaTableZoom{0%,68.0982%{opacity:0;transform:scale(1.08)}71.7791%{opacity:1;transform:scale(1.07)}96.319%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+@media(max-width:700px){.mosaic-slides .mosaic-slide-1{object-position:76% center}.mosaic-slides .mosaic-slide-2{object-position:58% center}.mosaic-slides .mosaic-slide-3{object-position:54% center}.mosaic-copy{padding-bottom:104px}}
+@media(prefers-reduced-motion:reduce){.mosaic-slides .mosaic-slide{animation:none;transform:none}.mosaic-slide-2,.mosaic-slide-3{display:none}}
