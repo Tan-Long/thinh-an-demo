@@ -3,6 +3,8 @@
 Website giới thiệu và bán trà, quà doanh nghiệp, quản trị đơn hàng/kho/khách hàng và cộng tác viên.
 
 - Website: https://thinh-an-demo.vercel.app
+- So sánh hai hướng: https://thinh-an-demo.vercel.app/compare/
+- Hướng 2: https://thinh-an-demo.vercel.app/concept-2/
 - Admin: https://thinh-an-demo.vercel.app/admin
 - Affiliate: https://thinh-an-demo.vercel.app/admin/affiliates
 
@@ -46,3 +48,7 @@ Dữ liệu lưu trong localStorage của từng trình duyệt, có thể bị 
 Ảnh báo chí, logo và nhãn hiệu giữ quyền của chủ sở hữu tương ứng; repository public không cấp lại quyền sử dụng thương mại các tài sản này. Cần xác nhận quyền dùng ảnh trước khi vận hành thương mại. Không tự áp dụng giấy phép mã nguồn mở cho toàn bộ tư liệu.
 
 PDF đề xuất, tài liệu nội bộ, cấu hình tài khoản, browser traces và ảnh QA không nằm trong repository. Các README bên trong có ghi chép lịch sử; hướng dẫn chạy hiện tại là tài liệu này.
+
+## Hai hướng thiết kế
+
+`concept-2/` giữ bản tham khảo riêng từ repo che-thinh-an-website; nguồn và commit được ghi trong README của thư mục. `comparison/` cung cấp trang chọn mẫu và thanh chuyển hướng. Build đặt bản hiện tại ở `/`, bản thứ hai ở `/concept-2/`, trang so sánh ở `/compare/`. Mỗi bản dùng bộ dữ liệu localStorage riêng.
