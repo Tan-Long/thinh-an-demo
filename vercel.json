@@ -63,6 +63,16 @@
   ],
   "redirects": [
     {
+      "source": "/compare/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/concept-2/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/compare/:path*",
       "destination": "/",
       "permanent": true
